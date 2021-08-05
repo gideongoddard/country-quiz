@@ -1,0 +1,27 @@
+.Error {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  background-color: #FF3CAC;
+  background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: calc(2% + 2vw) 3%;
+}
+
+.Container {
+  /* TEMPORARY */
+  width: min(90%, 700px);
+}
+
+h1 {
+  color: white;
+  text-transform: uppercase;
+}
+

@@ -1,0 +1,28 @@
+.Option {
+    display: block;
+    border-radius: 10px;
+    font-size: clamp(14px, calc(10px + 1.25vw), 18px);
+    font-weight: 600;
+    padding: 14px;
+    margin: 20px 0;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 700ms;
+    border: 2px solid hsl(232, 35%, 52%);
+    background-color: white;
+    color: hsl(232, 35%, 52%);
+}
+
+.Option:hover {
+    background-color: hsl(39, 100%, 60%);
+    border: 2px solid hsl(39, 100%, 60%);
+    color: white;
+    transition: background-color 100ms;
+}
+
+.Selected {
+    background-color: hsl(39, 100%, 50%);
+    border: 2px solid hsl(39, 100%, 50%);
+    color: white;
+}

@@ -1,0 +1,14 @@
+.World {
+    display: block;
+    margin: auto;
+    width: min(100%, 350px);
+    height: auto;
+}
+
+.Welcome {
+    font-size: clamp(24px, calc(18px + 2vw), 36px);
+}
+
+.Intro {
+    font-size: clamp(14px, calc(10px + 1.25vw), 18px);
+}
