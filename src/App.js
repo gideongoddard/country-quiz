@@ -39,7 +39,7 @@ class App extends React.Component {
   getStarted() {
     let unfiltered = this.state.allCountries;
     let filtered = reject(unfiltered, (item) => {
-      return item.capital == "";
+      return item.capital === "";
     });
     let answers = sample(filtered, 40);
     let one = answers.slice(0,4);
