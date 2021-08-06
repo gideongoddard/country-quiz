@@ -24,3 +24,7 @@
     border: 2px solid hsl(39, 100%, 50%);
     color: white;
 }
+
+.Selected:hover {
+    border: 2px solid hsl(39, 100%, 50%);
+}
