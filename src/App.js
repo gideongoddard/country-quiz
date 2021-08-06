@@ -13,9 +13,11 @@ class App extends React.Component {
       currentQuestion: 0,
       allCountries: [],
       questions: [],
+      score: 0,
     }
 
     this.getStarted = this.getStarted.bind(this);
+    this.updateScore = this.updateScore.bind(this);
   }
 
   componentDidMount() {
@@ -60,6 +62,14 @@ class App extends React.Component {
     });
   }
 
+  updateScore() {
+    let score = this.state.score;
+    score++; 
+    this.setState({
+      score: score
+    })
+  }
+
   render() {
     const error = this.state.error;
     if (error) {
@@ -69,7 +79,7 @@ class App extends React.Component {
         <div className="App">
           <div className="Container">
             <h1>Country quiz</h1>
-            <Box currentQuestion={this.state.currentQuestion} questions={this.state.questions} disabled={this.state.disabled} onGetStarted={this.getStarted} />
+            <Box currentQuestion={this.state.currentQuestion} questions={this.state.questions} disabled={this.state.disabled} onGetStarted={this.getStarted} score={this.state.score} onUpdateScore={this.updateScore} />
           </div>
         </div>
       )

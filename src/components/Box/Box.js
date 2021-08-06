@@ -13,7 +13,7 @@ function Box(props) {
     } else if (props.currentQuestion) {
         return (
             <div className="Box">
-                <Question currentQuestion={props.currentQuestion} questions={props.questions} />
+                <Question currentQuestion={props.currentQuestion} questions={props.questions} score={props.score} onUpdateScore={props.onUpdateScore} />
             </div>
         )
     }
