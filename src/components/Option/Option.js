@@ -39,7 +39,7 @@ class Option extends React.Component {
     render() {
         return (
             <div>
-                <button className={`Option ${this.state.status}`} onClick={this.props.questionStatus === 'new' ? this.handleSelection : null}>{this.props.text}</button>
+                <button className={`Option ${this.state.status}`} onClick={this.props.questionStatus !== 'confirmed' ? this.handleSelection : null}>{this.props.text}</button>
             </div>
         )
     }
