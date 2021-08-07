@@ -58,7 +58,7 @@ class Question extends React.Component {
                 <h2>Question {this.props.currentQuestion}</h2>
                 <p>{this.state.answer.capital} is the capital city of which country?</p>
                 {this.state.options.map(option => (
-                    <Option key={option.alpha2Code} code={option.alpha2Code} selected={this.state.selected} text={option.name} onSelection={this.handleSelection} answer={this.state.answer} questionStatus={this.state.questionStatus} />
+                    <Option key={option.alpha2Code} code={option.alpha2Code} selected={this.state.selected} text={option.name} onSelection={this.handleSelection} answer={this.state.answer} questionStatus={this.state.questionStatus} correct={this.state.correct} />
                 ))}
                 <>
                     {

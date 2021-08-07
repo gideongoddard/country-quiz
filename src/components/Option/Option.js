@@ -25,6 +25,10 @@ class Option extends React.Component {
             this.setState({
                 status: 'Default'
             })
+        } else if ((this.props.selected === this.props.code) && (this.props.selected !== this.props.answer.answer2Code) && (this.props.questionStatus === 'confirmed') && (this.state.status !== 'Wrong')) {
+            this.setState({
+                status: 'Wrong'
+            })
         }
     }
 
@@ -35,7 +39,7 @@ class Option extends React.Component {
     render() {
         return (
             <div>
-                <button className={`Option ${this.state.status}`} onClick={this.handleSelection}>{this.props.text}</button>
+                <button className={`Option ${this.state.status}`} onClick={this.props.questionStatus === 'new' ? this.handleSelection : null}>{this.props.text}</button>
             </div>
         )
     }
