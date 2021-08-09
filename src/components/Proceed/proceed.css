@@ -9,18 +9,18 @@
     width: 100%;
     cursor: pointer;
     transition: background-color 700ms, box-shadow 700ms;
-    background-color: hsl(232, 35%, 52%);
+    background-color: hsl(120, 15%, 50%);
     color: white;
     box-shadow: 0px 3px 10px 0px rgba(71, 80, 140, 0.35);
 }
 
 .Proceed:hover {
-    background-color: hsl(232, 35%, 59%);
+    background-color: hsl(120, 22%, 56%);
     transition: background-color 100ms;
 }
 
 .Proceed:active {
     box-shadow: none;
     transition: all 150ms;
-    background-color: hsl(232, 35%, 52%);
+    background-color: hsl(120, 15%, 50%);
 }

@@ -12,7 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: calc(2% + 2vw) 0;
+  padding: calc(3% + 3vw) 0;
 }
 
 .Container {

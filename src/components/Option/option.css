@@ -14,7 +14,7 @@
     color: hsl(232, 35%, 52%);
 }
 
-.Option:hover {
+.Default:hover {
     border: 2px solid hsl(323, 86%, 59%);
     transition: border 100ms;
 }

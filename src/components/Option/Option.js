@@ -29,6 +29,10 @@ class Option extends React.Component {
             this.setState({
                 status: 'Wrong'
             })
+        } else if ((this.props.questionStatus === 'confirmed') && (this.state.status === 'Default')) {
+            this.setState({
+                status: 'Option'
+            })
         }
     }
 

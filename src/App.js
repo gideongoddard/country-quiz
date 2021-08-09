@@ -99,7 +99,6 @@ class App extends React.Component {
       return (
         <div className="App">
           <div className="Container">
-            <h1>Country quiz</h1>
             <Box currentQuestion={this.state.currentQuestion} questions={this.state.questions} disabled={this.state.disabled} onGetStarted={this.getStarted} score={this.state.score} onUpdateScore={this.updateScore} onUpdateQuestion={this.updateQuestion} onRestart={this.restart} />
           </div>
         </div>

@@ -14,8 +14,8 @@
     font-size: clamp(24px, calc(18px + 2vw), 36px);
 }
 
-.Announcement {
-    font-size: clamp(14px, calc(10px + 1.25vw), 18px);
+.Announcement, .Line {
+    font-size: clamp(16px, calc(12px + 1.25vw), 18px);
     margin-bottom: 30px;
 }
 
@@ -23,8 +23,4 @@
     font-weight: 700;
     font-size: clamp(28px, calc(20px + 2.25vw), 42px);
     color: hsl(323, 86%, 59%);
-}
-
-.Line {
-    margin-bottom: 30px;
 }

@@ -7,7 +7,7 @@ function Proceed(props) {
     }
 
     return (
-        <button className="Proceed" onClick={handleUpdateQuestion}>Continue</button>
+        <button className="Proceed" onClick={handleUpdateQuestion}>Continue →</button>
     )
 }
 

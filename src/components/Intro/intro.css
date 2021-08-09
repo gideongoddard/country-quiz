@@ -14,5 +14,6 @@
 }
 
 .Intro {
-    font-size: clamp(14px, calc(10px + 1.25vw), 18px);
+    font-size: clamp(16px, calc(12px + 1.25vw), 18px);
+    margin-bottom: 30px;
 }
