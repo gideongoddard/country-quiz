@@ -1,7 +1,11 @@
+.IntroBox {
+    padding-bottom: 10px;
+}
+
 .World {
     display: block;
     margin: auto;
-    width: min(80%, 350px);
+    width: min(70%, 350px);
     height: auto;
 }
 

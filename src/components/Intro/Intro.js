@@ -6,7 +6,7 @@ import React from 'react';
 class Intro extends React.Component {
     render() {
         return (
-            <div>
+            <div className="IntroBox">
                 <img className="World" src={World} alt="Around the world illustration" width="500" height="343" />
                 <h2 className="Welcome">Welcome to the biggest, baddest country quiz you ever did play!</h2>
                 <p className="Intro">You'll face 10 questions. They could be about any country on Earth so let's hope you've done your homework...</p>
