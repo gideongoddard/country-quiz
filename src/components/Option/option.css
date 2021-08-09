@@ -14,19 +14,10 @@
     color: hsl(232, 35%, 52%);
 }
 
-.Default:hover {
-    border: 2px solid hsl(323, 86%, 59%);
-    transition: border 100ms;
-}
-
 .Selected {
     background-color: hsl(39, 100%, 50%);
     border: 2px solid hsl(39, 100%, 50%);
     color: white;
-}
-
-.Selected:hover {
-    border: 2px solid hsl(39, 100%, 50%);
 }
 
 .Correct {
@@ -35,16 +26,27 @@
     color: white;
 }
 
-.Correct:hover {
-    border-color: hsl(120, 80%, 25%);
-}
-
 .Wrong {
     background-color: hsl(0, 80%, 50%);
     border-color: hsl(0, 80%, 50%);
     color: white;
 }
 
-.Wrong:hover {
-    border-color: hsl(0, 80%, 50%);
+@media (hover: hover) {
+    .Default:hover {
+        border: 2px solid hsl(323, 86%, 59%);
+        transition: border 100ms;
+    }
+    
+    .Selected:hover {
+        border: 2px solid hsl(39, 100%, 50%);
+    }
+    
+    .Correct:hover {
+        border-color: hsl(120, 80%, 25%);
+    }
+    
+    .Wrong:hover {
+        border-color: hsl(0, 80%, 50%);
+    }
 }
