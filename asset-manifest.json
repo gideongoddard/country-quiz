@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/country-quiz/static/css/main.315401a5.chunk.css",
-    "main.js": "/country-quiz/static/js/main.5b910bd4.chunk.js",
-    "main.js.map": "/country-quiz/static/js/main.5b910bd4.chunk.js.map",
-    "runtime-main.js": "/country-quiz/static/js/runtime-main.d492804d.js",
-    "runtime-main.js.map": "/country-quiz/static/js/runtime-main.d492804d.js.map",
+    "main.css": "/country-quiz/static/css/main.c2d99e83.chunk.css",
+    "main.js": "/country-quiz/static/js/main.d0accb83.chunk.js",
+    "main.js.map": "/country-quiz/static/js/main.d0accb83.chunk.js.map",
+    "runtime-main.js": "/country-quiz/static/js/runtime-main.9a30bb68.js",
+    "runtime-main.js.map": "/country-quiz/static/js/runtime-main.9a30bb68.js.map",
     "static/js/2.9de14e22.chunk.js": "/country-quiz/static/js/2.9de14e22.chunk.js",
     "static/js/2.9de14e22.chunk.js.map": "/country-quiz/static/js/2.9de14e22.chunk.js.map",
-    "static/js/3.ae3872e4.chunk.js": "/country-quiz/static/js/3.ae3872e4.chunk.js",
-    "static/js/3.ae3872e4.chunk.js.map": "/country-quiz/static/js/3.ae3872e4.chunk.js.map",
+    "static/js/3.f7d45e0f.chunk.js": "/country-quiz/static/js/3.f7d45e0f.chunk.js",
+    "static/js/3.f7d45e0f.chunk.js.map": "/country-quiz/static/js/3.f7d45e0f.chunk.js.map",
     "index.html": "/country-quiz/index.html",
-    "static/css/main.315401a5.chunk.css.map": "/country-quiz/static/css/main.315401a5.chunk.css.map",
+    "static/css/main.c2d99e83.chunk.css.map": "/country-quiz/static/css/main.c2d99e83.chunk.css.map",
     "static/js/2.9de14e22.chunk.js.LICENSE.txt": "/country-quiz/static/js/2.9de14e22.chunk.js.LICENSE.txt",
-    "static/media/undraw_Around_the_world_re_n353.2934a5eb.png": "/country-quiz/static/media/undraw_Around_the_world_re_n353.2934a5eb.png"
+    "static/media/undraw_Around_the_world_re_n353.2934a5eb.png": "/country-quiz/static/media/undraw_Around_the_world_re_n353.2934a5eb.png",
+    "static/media/undraw_winners.d76bfdf8.svg": "/country-quiz/static/media/undraw_winners.d76bfdf8.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.d492804d.js",
+    "static/js/runtime-main.9a30bb68.js",
     "static/js/2.9de14e22.chunk.js",
-    "static/css/main.315401a5.chunk.css",
-    "static/js/main.5b910bd4.chunk.js"
+    "static/css/main.c2d99e83.chunk.css",
+    "static/js/main.d0accb83.chunk.js"
   ]
 }
