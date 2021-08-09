@@ -18,6 +18,8 @@ class App extends React.Component {
 
     this.getStarted = this.getStarted.bind(this);
     this.updateScore = this.updateScore.bind(this);
+    this.updateQuestion = this.updateQuestion.bind(this);
+    this.restart = this.restart.bind(this);
   }
 
   componentDidMount() {
@@ -70,6 +72,25 @@ class App extends React.Component {
     })
   }
 
+  updateQuestion() {
+    let currentQuestion = this.state.currentQuestion;
+    currentQuestion++
+
+    this.setState({
+      currentQuestion: currentQuestion,
+    })
+  }
+
+  restart() {
+    this.setState({
+      disabled: false,
+      currentQuestion: 0,
+      allCountries: [],
+      questions: [],
+      score: 0,
+    })
+  }
+
   render() {
     const error = this.state.error;
     if (error) {
@@ -79,7 +100,7 @@ class App extends React.Component {
         <div className="App">
           <div className="Container">
             <h1>Country quiz</h1>
-            <Box currentQuestion={this.state.currentQuestion} questions={this.state.questions} disabled={this.state.disabled} onGetStarted={this.getStarted} score={this.state.score} onUpdateScore={this.updateScore} />
+            <Box currentQuestion={this.state.currentQuestion} questions={this.state.questions} disabled={this.state.disabled} onGetStarted={this.getStarted} score={this.state.score} onUpdateScore={this.updateScore} onUpdateQuestion={this.updateQuestion} onRestart={this.restart} />
           </div>
         </div>
       )

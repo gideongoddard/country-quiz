@@ -2,6 +2,7 @@ import React from 'react';
 import './box.css';
 import Intro from '../Intro/Intro'
 import Question from '../Question/Question'
+import Results from '../Results/Results';
 
 function Box(props) {
     if (props.currentQuestion === 0) {
@@ -10,10 +11,16 @@ function Box(props) {
                 <Intro disabled={props.disabled} onGetStarted={props.onGetStarted} />
             </div>
         )
+    } else if (props.currentQuestion > 10) {
+        return (
+            <div className="Box">
+                <Results score={props.score} onRestart={props.onRestart} />
+            </div>
+        )
     } else if (props.currentQuestion) {
         return (
             <div className="Box">
-                <Question currentQuestion={props.currentQuestion} questions={props.questions} score={props.score} onUpdateScore={props.onUpdateScore} />
+                <Question key={props.currentQuestion} currentQuestion={props.currentQuestion} questions={props.questions} score={props.score} onUpdateScore={props.onUpdateScore} onUpdateQuestion={props.onUpdateQuestion} />
             </div>
         )
     }

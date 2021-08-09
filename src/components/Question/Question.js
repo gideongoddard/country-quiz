@@ -13,11 +13,16 @@ class Question extends React.Component {
             answer: '',
             selected: '',
         }
+        this.getQuestion = this.getQuestion.bind(this);
         this.handleSelection = this.handleSelection.bind(this);
         this.handleConfirm = this.handleConfirm.bind(this);
     }
 
     componentDidMount() {
+        this.getQuestion();
+    }
+
+    getQuestion() {
         let currentQuestion = this.props.currentQuestion -1;
         let options = this.props.questions[currentQuestion];
         let num = Math.floor(Math.random() * options.length);
@@ -25,6 +30,8 @@ class Question extends React.Component {
         this.setState({
             options: options,
             answer: answer,
+            questionStatus: 'new',
+            selected: '',
         })
     }
 
@@ -42,7 +49,6 @@ class Question extends React.Component {
         if (answerCode === selection) {
             this.setState({
                 selected: '',
-                correct: this.state.answer,
             });
             this.props.onUpdateScore();
         }
@@ -70,7 +76,7 @@ class Question extends React.Component {
                     }
                     {
                         this.state.questionStatus === 'confirmed' ? (
-                            <Proceed />
+                            <Proceed currentQuestion={this.props.currentQuestion} onUpdateQuestion={this.props.onUpdateQuestion} />
                         ) : (
                             <></>
                         )
