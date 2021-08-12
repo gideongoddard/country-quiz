@@ -27,11 +27,22 @@ class Question extends React.Component {
         let options = this.props.questions[currentQuestion];
         let num = Math.floor(Math.random() * options.length);
         let answer = options[num];
+        let getQuestionType = () => {
+            let num = Math.floor(Math.random() * 2);
+            if (num === 0) {
+                return 'capital';
+            } else {
+                return 'flag';
+            }
+        }
+        let questionType = getQuestionType();
+
         this.setState({
             options: options,
             answer: answer,
             questionStatus: 'new',
             selected: '',
+            questionType: questionType,
         })
     }
 
@@ -58,11 +69,12 @@ class Question extends React.Component {
     }
 
     render() {
-    
         return (
             <div>
                 <h2>Question {this.props.currentQuestion}</h2>
-                <p>{this.state.answer.capital} is the capital city of which country?</p>
+                {
+                    this.state.questionType === 'capital' ? <p>{this.state.answer.capital} is the capital of which country?</p> : (<><img class="flag" src={this.state.answer.flag} alt="Mystery flag" width="80" height="50" /><p style={{display: "inline-block", marginLeft: 10}}> is the flag of which country?</p></>)
+                }
                 {this.state.options.map(option => (
                     <Option key={option.alpha2Code} code={option.alpha2Code} selected={this.state.selected} text={option.name} onSelection={this.handleSelection} answer={this.state.answer} questionStatus={this.state.questionStatus} correct={this.state.correct} />
                 ))}

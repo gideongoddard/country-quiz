@@ -85,7 +85,6 @@ class App extends React.Component {
     this.setState({
       disabled: false,
       currentQuestion: 0,
-      allCountries: [],
       questions: [],
       score: 0,
     })
